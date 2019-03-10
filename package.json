@@ -13,7 +13,8 @@
     "serve": "browser-sync start --server ./dist --files \"./dist/**/*.*\" --no-notify",
     "dev": "concurrently \"npm:watch-*\" \"npm:serve\"",
     "start": "npm run dev",
-    "build": "npm run views && npm run scripts && npm run styles"
+    "zip": "node docs/zip-src.js",
+    "build": "npm run views && npm run scripts && npm run styles && npm run zip"
   },
   "keywords": [],
   "author": "",
