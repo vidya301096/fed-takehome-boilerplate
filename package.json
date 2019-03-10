@@ -1,12 +1,30 @@
 {
   "name": "d-fed-homework-boilerplate",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "designory front end developer take home test boilerplate",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "views": "cpx ./src/views/*.html ./dist --verbose",
+    "watch-views": "npm run views -- --watch",
+    "scripts": "babel ./src/scripts/ --verbose --out-dir ./dist/js/ --source-maps --presets=@babel/preset-env",
+    "watch-scripts": "npm run scripts -- --watch",
+    "styles": "sass ./src/styles/main.scss ./dist/css/main.css -I ./src/styles/partials",
+    "watch-styles": "npm run styles -- --watch",
+    "watch": "concurrently \"npm:watch-*\"",
+    "serve": "browser-sync start --server ./dist --files \"./dist/**/*.*\"",
+    "dev": "concurrently \"npm:watch-*\" \"npm:serve\"",
+    "start": "npm run dev",
+    "build": "npm run views && npm run scripts && npm run styles"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "~7.2.3",
+    "@babel/core": "~7.3.4",
+    "@babel/preset-env": "~7.3.4",
+    "browser-sync": "~2.26.3",
+    "concurrently": "~4.1.0",
+    "cpx": "~1.5.0",
+    "sass": "~1.17.2"
+  }
 }
