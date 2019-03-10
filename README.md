@@ -1,6 +1,6 @@
 # designory. Front End Developer - Take Home Test Boilerplate
 
-Convert the attached PDF comp ([Designory-Project](Designory-Project.pdf)) to a webpage using the
+Convert the attached PDF comp - **[Designory-Project.pdf](Designory-Project.pdf)** - to a webpage using the
 following guidelines:
 
 *  Give a detailed explanation of why you coded it the way you did
