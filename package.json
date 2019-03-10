@@ -13,7 +13,8 @@
     "serve": "browser-sync start --server ./dist --files \"./dist/**/*.*\" --no-notify",
     "dev": "concurrently \"npm:watch-*\" \"npm:serve\"",
     "start": "npm run dev",
-    "build": "npm run views && npm run scripts && npm run styles"
+    "zip": "node docs/zip-src.js",
+    "build": "npm run views && npm run scripts && npm run styles && npm run zip"
   },
   "keywords": [],
   "author": "",
@@ -22,7 +23,9 @@
     "@babel/cli": "~7.2.3",
     "@babel/core": "~7.3.4",
     "@babel/preset-env": "~7.3.4",
+    "archiver": "~3.0.0",
     "browser-sync": "~2.26.3",
+    "chalk": "~2.4.2",
     "concurrently": "~4.1.0",
     "cpx": "~1.5.0",
     "sass": "~1.17.2"

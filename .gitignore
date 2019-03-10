@@ -138,5 +138,6 @@ $RECYCLE.BIN/
 
 # End of https://www.gitignore.io/api/osx,windows,node
 
-# Ignore distribution files
+# Ignore distribution files (and zips)
 dist/
+*.zip
