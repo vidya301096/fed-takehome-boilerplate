@@ -10,7 +10,7 @@
     "styles": "sass ./src/styles/main.scss ./dist/css/main.css -I ./src/styles/partials",
     "watch-styles": "npm run styles -- --watch",
     "watch": "concurrently \"npm:watch-*\"",
-    "serve": "browser-sync start --server ./dist --files \"./dist/**/*.*\"",
+    "serve": "browser-sync start --server ./dist --files \"./dist/**/*.*\" --no-notify",
     "dev": "concurrently \"npm:watch-*\" \"npm:serve\"",
     "start": "npm run dev",
     "build": "npm run views && npm run scripts && npm run styles"
