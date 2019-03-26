@@ -11,6 +11,8 @@ following guidelines:
 
 ## Installation Instructions
 
+Be sure to have node.js installed.
+
 Install all npm modules via:
 
     npm ci
