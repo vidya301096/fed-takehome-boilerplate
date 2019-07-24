@@ -1,17 +1,26 @@
 # designory. Front End Developer - Take Home Test Boilerplate
 
-Convert the attached PDF comp - **[Designory-Project.pdf](Designory-Project.pdf)** - to a webpage using the
+Convert the attached PDF comp - [**Designory-Project.pdf**](Designory-Project.pdf) - to a webpage using the
 following guidelines:
 
 *  Give a detailed explanation of why you coded it the way you did
 *  No CSS frameworks
 *  Please use a CSS pre-processor (ie, Sass/SCSS)
 *  Please make responsive as best you can, mobile first
-*  When complete, run `npm run build` to generate a ZIP of your source and built files
+*  ZIP the resulting HTML, CSS, and JS files (where applied) when sending the finished product. If using this boilerplate, running `npm run build` will generate this ZIP file for you.
+
+## What is this Boilerplate?
+
+This is a sample [NodeJS](https://nodejs.org/en/) project that has already been configured to give you
+Sass compilation, Babel transpilation, and browser hot-reloads out of the box.
+
+Creating this page within this (or any) Node environment is not required. If you already have a local
+development environment that you prefer, you can use that instead.
 
 ## Installation Instructions
 
-Be sure to have node.js installed.
+> Installing this boilerplate assumes you already have [NodeJS](https://nodejs.org/en/) and
+> [npm](https://www.npmjs.com/) installed and configured on your machine.
 
 Install all npm modules via:
 
