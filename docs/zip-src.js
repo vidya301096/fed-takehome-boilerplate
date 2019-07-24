@@ -10,11 +10,19 @@ const rl = readline.createInterface({
 });
 
 console.log(chalk.blue('Creating a ZIP of "src/" and "dist/" directories.\n'));
+const what_to_name = chalk.green('What do you want to name your zipfile');
+const default_zip_name = 'build.zip';
+const eg = chalk.gray('(default: ') + default_zip_name + chalk.gray(')') + '?';
 
-rl.question(`${chalk.green('What do you want to name your zipfile')} ${chalk.gray('(default: ')}"build.zip"${chalk.gray(')')}? `, zip_file => {
-    if (!String(zip_file).trim()) {
+rl.question(`${what_to_name} ${eg} `, zip_file => {
+    zip_file = String(zip_file).trim();
+
+    if (!zip_file) {
         // Use a default if no answer was given in the script
-        zip_file = 'build.zip';
+        zip_file = default_zip_name;
+    } else if (!zip_file.endsWith('.zip')) {
+        // Append '.zip' if it was not entered
+        zip_file += '.zip';
     }
 
     let zip_filepath = path.resolve(__dirname, '../', zip_file);
