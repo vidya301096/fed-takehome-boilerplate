@@ -14,9 +14,6 @@ following guidelines:
 This is a sample [NodeJS](https://nodejs.org/en/) project that has already been configured to give you
 Sass compilation, Babel transpilation, and browser hot-reloads out of the box.
 
-Creating this page within this (or any) Node environment is not required. If you already have a local
-development environment that you prefer, you can use that instead.
-
 ## Installation Instructions
 
 > Installing this boilerplate assumes you already have [NodeJS](https://nodejs.org/en/) and
