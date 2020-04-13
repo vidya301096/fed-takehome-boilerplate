@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "designory front end developer take home test boilerplate",
   "scripts": {
-    "views": "cpx ./src/views/*.html ./dist --verbose",
+    "views": "cpx \"./src/views/*.html\" ./dist --verbose",
     "watch-views": "npm run views -- --watch",
     "scripts": "babel ./src/scripts/ --verbose --out-dir ./dist/js/ --source-maps --presets=@babel/preset-env",
     "watch-scripts": "npm run scripts -- --watch",
