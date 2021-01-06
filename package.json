@@ -23,7 +23,7 @@
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.9",
     "@babel/preset-env": "^7.12.9",
-    "archiver": "~3.1.0",
+    "archiver": "^4.0.0",
     "browser-sync": "^2.26.13",
     "chalk": "~3.0.0",
     "concurrently": "~5.3.0",
