@@ -3,31 +3,40 @@
   "version": "1.0.0",
   "description": "designory front end developer take home test boilerplate",
   "scripts": {
-    "views": "cpx \"./src/views/*.html\" ./dist --verbose",
-    "watch-views": "npm run views -- --watch",
-    "scripts": "babel ./src/scripts/ --verbose --out-dir ./dist/js/ --source-maps --presets=@babel/preset-env",
-    "watch-scripts": "npm run scripts -- --watch",
-    "styles": "sass ./src/styles/main.scss ./dist/css/main.css -I ./src/styles/partials",
-    "watch-styles": "npm run styles -- --watch",
-    "watch": "concurrently \"npm:watch-*\"",
-    "serve": "browser-sync start --server ./dist --files \"./dist/**/*.*\" --no-notify",
-    "dev": "concurrently \"npm:watch-*\" \"npm:serve\"",
-    "start": "npm run dev",
-    "zip": "node docs/zip-src.js",
-    "build": "npm run views && npm run scripts && npm run styles && npm run zip"
+    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.3",
+    "sass": "^1.32.8",
+    "web-vitals": "^1.0.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "author": "Matt Wade <matt.wade@designory.com>",
-  "license": "MIT",
-  "dependencies": {
-    "@babel/cli": "~7.12.17",
-    "@babel/core": "~7.12.0",
-    "@babel/preset-env": "~7.12.0",
-    "archiver": "~3.1.0",
-    "browser-sync": "~2.26.14",
-    "chalk": "~3.0.0",
-    "concurrently": "~5.1.0",
-    "cpx": "^1.5.0",
-    "minimist": ">=1.2.2",
-    "sass": "^1.26.3"
-  }
+  "license": "MIT"
 }
