@@ -1,4 +1,6 @@
+// @see https://create-react-app.dev/docs/adding-images-fonts-and-files/#adding-svgs
 import logo, { ReactComponent as Logo } from './logo.svg';
+
 import './App.scss';
 
 function App() {
@@ -7,7 +9,7 @@ function App() {
 			<Logo />
 			{/* Or, import the SVG and use it as an image: <img src={logo} alt="Logo" /> */}
 			<p>
-				<strong>Please create your application here.</strong>
+				<strong>Please create your webpage here.</strong>
 			</p>
 			<p>
 				Feel free to delete all existing JS or (S)CSS files and start from scratch, all of
@@ -16,8 +18,7 @@ function App() {
 				you find comfortable.
 			</p>
 			<p>
-				In addition, feel free to use whatever styling means you are comfortable with,
-				including:
+				In addition, please to use whatever styling methods you are familiar with, including:
 			</p>
 			<ul>
 				<li>
