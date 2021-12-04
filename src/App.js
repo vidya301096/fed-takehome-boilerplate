@@ -5,6 +5,7 @@ import Tile from './components/atoms/Tile';
 import Logo from './assets/logo.svg';
 import Header from './components/molecules/Header';
 import Hero from './components/molecules/Hero';
+import Footer from './components/atoms/Footer';
 
 function App() {
 	return (
@@ -50,6 +51,7 @@ function App() {
 				</Tile>
 				<Tile />
 			</Container>
+			<Footer phone='81378938490' />
 		</>
 	);
 }
