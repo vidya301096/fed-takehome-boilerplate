@@ -2,10 +2,13 @@ import React from 'react';
 import { string, element, bool } from 'prop-types';
 import './Container.scss';
 
-const Container = ({ className, children, fluid, as }) => {
+const Container = ({ className, children, fluid, as, ...rest }) => {
 	const Tag = as;
 	return (
-		<Tag className={`Container ${className} ${fluid ? 'fluid' : ''}`}>
+		<Tag
+			className={`Container ${className} ${fluid ? 'fluid' : ''}`}
+			{...rest}
+		>
 			{children}
 		</Tag>
 	);
