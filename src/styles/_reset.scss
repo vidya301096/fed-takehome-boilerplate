@@ -1,13 +1,15 @@
 @import './variables';
+/* Following rem sizing of texts throughout */
+html {
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
 /* Reset all the default CSS applied by browsers */
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-}
-/* Following rem sizing of texts throughout */
-html {
-	font-family: sans-serif;
-	font-size: 16px;
+	font-family: inherit;
 	color: $primary;
 }
