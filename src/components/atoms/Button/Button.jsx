@@ -10,7 +10,7 @@ const Button = ({ children, href, className, ...rest }) => {
 			href={href}
 			{...rest}
 		>
-			{children}
+			{children.toUpperCase()}
 		</Tag>
 	);
 };

@@ -4,6 +4,7 @@ import Container from './components/atoms/Container';
 import Tile from './components/atoms/Tile';
 import Logo from './assets/logo.svg';
 import Header from './components/molecules/Header';
+import Hero from './components/molecules/Hero';
 
 function App() {
 	return (
@@ -16,6 +17,11 @@ function App() {
 					'contact info': '/contact',
 				}}
 			/>
+			<Hero
+				greeting='Well, Hello there'
+				title='This is where your message should go'
+				button='Download Now'
+			></Hero>
 			<Container>
 				<div
 					style={{

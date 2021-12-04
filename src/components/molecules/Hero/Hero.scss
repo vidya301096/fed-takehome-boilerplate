@@ -1,0 +1,37 @@
+@import '../../../styles/variables';
+.Hero {
+	background: $tertiary-gray;
+	border-bottom: 2px solid $secondary-border;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding: 7rem;
+	padding-top: 7rem;
+	padding-bottom: 20%;
+	.hero--content {
+		.hero--title,
+		.hero--greeting {
+			width: 60%;
+		}
+		.hero--title {
+			font-size: 3rem;
+			line-height: 3rem;
+			margin-bottom: 2rem;
+		}
+		.hero--greeting {
+			font-weight: 600;
+			font-size: 1.25rem;
+			line-height: 2rem;
+		}
+	}
+	@media (max-width: 560px) {
+		.hero--content {
+			padding-bottom: 25%;
+			.hero--title,
+			.hero--greeting {
+				width: 100%;
+			}
+		}
+	}
+}
