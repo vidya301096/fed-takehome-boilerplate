@@ -1,0 +1,17 @@
+@import '../../../styles/variables';
+.Header {
+	height: 90px;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: solid 3px $primary-border;
+	.header--logo {
+		width: 16.66%;
+	}
+	.header--link_group {
+		* {
+			margin: 0 0.5rem;
+		}
+	}
+}
