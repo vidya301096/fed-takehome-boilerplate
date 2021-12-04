@@ -2,10 +2,14 @@ import React from 'react';
 import { string } from 'prop-types';
 import './Button.scss';
 
-const Button = ({ children, href }) => {
+const Button = ({ children, href, className, ...rest }) => {
 	const Tag = href ? 'a' : 'button';
 	return (
-		<Tag className={`Button ${href ? 'Button--link' : ''}`} href={href}>
+		<Tag
+			className={`Button ${className} ${href ? 'Button--link' : ''}`}
+			href={href}
+			{...rest}
+		>
 			{children}
 		</Tag>
 	);
@@ -14,10 +18,12 @@ const Button = ({ children, href }) => {
 export default Button;
 
 Button.propTypes = {
+	className: string,
 	children: string.isRequired,
 	href: string,
 };
 
 Button.defaultProps = {
 	href: '',
+	className: '',
 };
