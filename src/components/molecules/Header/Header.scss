@@ -1,6 +1,5 @@
 @import '../../../styles/variables';
 .Header {
-	height: 90px;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 	display: flex;
@@ -8,10 +7,26 @@
 	border-bottom: solid 3px $primary-border;
 	.header--logo {
 		width: 16.66%;
+		display: flex;
 	}
 	.header--link_group {
 		* {
 			margin: 0 0.5rem;
+		}
+	}
+	@media (max-width: 560px) {
+		flex-direction: column;
+		align-items: center;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		.header--logo {
+			width: 80%;
+		}
+		.header--link_group {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 2rem;
 		}
 	}
 }
