@@ -20,8 +20,13 @@ export default Hero;
 
 Hero.propTypes = {
 	className: string,
+	greeting: string,
+	title: string.isRequired,
+	button: string,
 };
 
 Hero.defaultProps = {
 	className: '',
+	greeting: '',
+	button: '',
 };
