@@ -1,0 +1,13 @@
+.Container {
+	padding: 0 2rem;
+	max-width: 1170px;
+	margin: 0 auto;
+	&.fluid {
+		width: 100%;
+		max-width: unset;
+		padding: 0;
+	}
+	@media (max-width: 768px) {
+		padding: 0 1rem;
+	}
+}
