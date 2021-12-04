@@ -2,7 +2,7 @@ import './App.scss';
 import Button from './components/atoms/Button';
 import Container from './components/atoms/Container';
 import Tile from './components/atoms/Tile';
-import Logo from './logo.svg';
+import Logo from './assets/logo.svg';
 
 function App() {
 	return (
