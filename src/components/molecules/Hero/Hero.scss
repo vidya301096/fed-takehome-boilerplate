@@ -7,7 +7,6 @@
 	align-items: flex-start;
 	justify-content: flex-start;
 	padding: 7rem;
-	padding-top: 7rem;
 	padding-bottom: 20%;
 	.hero--content {
 		.hero--title,
@@ -26,6 +25,7 @@
 		}
 	}
 	@media (max-width: 560px) {
+		padding: 3rem;
 		.hero--content {
 			padding-bottom: 25%;
 			.hero--title,
