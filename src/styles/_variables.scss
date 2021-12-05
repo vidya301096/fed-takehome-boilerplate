@@ -9,3 +9,17 @@ $tertiary-gray: #ebebeb;
 
 $primary-border: #000000;
 $secondary-border: #c9c9c9;
+
+$container-width: 1152px;
+
+// breakpoints
+// Only 2 breakpoints are considered
+// Devices with width as 560px and less are considered as small devices.
+// Devices with width greater than 560px are considered as larger devices.
+$sm: 560px;
+
+// Tile config
+$tile-image-height: 140px;
+
+//section config
+$section-image-height: 500px;

@@ -25,7 +25,7 @@
 			line-height: 2rem;
 		}
 	}
-	@media (max-width: 560px) {
+	@media (max-width: $sm) {
 		padding: 3rem;
 		.hero--content {
 			padding-bottom: 25%;

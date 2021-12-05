@@ -4,10 +4,10 @@
 	padding: 1rem;
 	background: $secondary;
 	.tile--image {
-		height: 140px;
+		height: $tile-image-height;
 		width: 100%;
 		&--no_content {
-			height: 140px;
+			height: $tile-image-height;
 			width: 100%;
 			background: $secondary-gray;
 		}

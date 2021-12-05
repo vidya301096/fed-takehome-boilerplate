@@ -1,12 +1,13 @@
+@import '../../../styles/variables';
 .Container {
 	padding: 0 2rem;
-	max-width: 1152px;
+	max-width: $container-width;
 	margin: 0 auto;
 	&.fluid {
 		width: 100%;
 		max-width: unset;
 	}
-	@media (max-width: 560px) {
+	@media (max-width: $sm) {
 		padding: 0 1rem;
 	}
 }
