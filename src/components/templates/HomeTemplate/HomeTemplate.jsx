@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { object } from 'prop-types';
+import { arrayOf, object, shape, string } from 'prop-types';
 
 import Container from '../../atoms/Container';
 import Tile from '../../atoms/Tile';
@@ -71,7 +71,59 @@ const HomeTemplate = ({ content, className }) => {
 export default HomeTemplate;
 
 HomeTemplate.propTypes = {
-	content: object.isRequired,
+	content: shape({
+		header: shape({
+			links: object.isRequired,
+		}).isRequired,
+		hero: shape({
+			greeting: string,
+			title: string.isRequired,
+			button: string,
+		}).isRequired,
+		tiles: arrayOf(
+			shape({
+				title: string,
+				date: string,
+				href: string,
+				src: string,
+				content: string,
+			}),
+		).isRequired,
+		section: shape({
+			src: string,
+			title: string.isRequired,
+			tagLine: string,
+			content: string,
+			button: string,
+		}).isRequired,
+		footer: shape({
+			phone: string.isRequired,
+		}).isRequired,
+	}),
+	className: string,
 };
 
-HomeTemplate.defaultProps = {};
+HomeTemplate.defaultProps = {
+	className: '',
+	content: shape({
+		hero: shape({
+			greeting: '',
+			button: '',
+		}),
+		tiles: arrayOf(
+			shape({
+				title: '',
+				date: '',
+				href: '',
+				src: '',
+				content: '',
+			}),
+		),
+		section: shape({
+			src: '',
+			tagLine: '',
+			content: '',
+			button: '',
+		}),
+	}),
+};
