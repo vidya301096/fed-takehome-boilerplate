@@ -1,8 +1,8 @@
 @import '../../../styles/variables';
 .Footer {
 	border-top: 2px solid $primary-border;
-	width: 95%;
-	padding: 0.5rem 0 1.5rem 0;
+	padding-top: 0.5rem;
+	padding-bottom: 1.5rem;
 	display: flex;
 	justify-content: space-between;
 	* {

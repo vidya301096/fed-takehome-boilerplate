@@ -2,20 +2,34 @@
 .Tile {
 	box-shadow: 0 3px 10px rgb(0 0 0 / 0.25);
 	padding: 1rem;
+	background: $secondary;
 	.tile--image {
 		height: 140px;
 		width: 100%;
+		&--no_content {
+			height: 140px;
+			width: 100%;
+			background: $secondary-gray;
+		}
 	}
 	.tile--title {
 		font-size: 1.5rem;
 		font-weight: 400;
+		margin-top: 1.25rem;
 	}
 	.tile--date {
 		font-size: 0.75rem;
 		font-weight: 300;
 	}
 	.tile--content {
+		font-size: 0.75rem;
+		line-height: 1.25rem;
+		font-weight: 300;
+		margin-top: 1rem;
 		text-overflow: ellipsis;
-		padding: 0.75rem 0;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
 	}
 }

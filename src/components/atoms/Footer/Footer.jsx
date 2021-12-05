@@ -5,7 +5,12 @@ import Container from '../Container';
 
 const Footer = ({ className, phone, ...rest }) => {
 	return (
-		<Container as='footer' className={`Footer ${className}`} {...rest}>
+		<Container
+			as='footer'
+			className={`Footer ${className}`}
+			fluid
+			{...rest}
+		>
 			<p className='footer--phone'>
 				PHONE: <b>{phone}</b>
 			</p>
