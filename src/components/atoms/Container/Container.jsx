@@ -1,5 +1,5 @@
 import React from 'react';
-import { string, element, bool } from 'prop-types';
+import { string, bool } from 'prop-types';
 import './Container.scss';
 
 const Container = ({ className, children, fluid, as, ...rest }) => {
@@ -18,7 +18,6 @@ export default Container;
 
 Container.propTypes = {
 	className: string,
-	children: element.isRequired,
 	fluid: bool,
 	as: string,
 };

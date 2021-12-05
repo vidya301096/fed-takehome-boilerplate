@@ -18,9 +18,9 @@ const Header = ({ className, links, ...rest }) => {
 			</a>
 			<nav className='header--link_group'>
 				{Object.keys(links).length > 0 &&
-					Object.keys(links).map((link) => {
+					Object.keys(links).map((link, i) => {
 						return (
-							<Button href={links[link]}>
+							<Button href={links[link]} key={i}>
 								{link.toUpperCase()}
 							</Button>
 						);
