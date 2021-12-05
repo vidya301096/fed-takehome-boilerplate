@@ -1,13 +1,10 @@
 import './App.scss';
-import HomeTemplate from './components/templates/HomeTemplate';
-import content from './content/homepage.js';
+import Home from './components/pages/Home';
+
+//Todo: Add Routing for multiple pages
 
 function App() {
-	return (
-		<>
-			<HomeTemplate content={content} />
-		</>
-	);
+	return <Home />;
 }
 
 export default App;
